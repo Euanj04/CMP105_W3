@@ -23,4 +23,15 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+	sf::CircleShape movingCircle;
+	sf::CircleShape leftrightCircle;
+	sf::RectangleShape player;
+	sf::Font font;
+	sf::Text speedometer;
+
+	float leftrightSpeed = 50;
+	float circleSpeed = 100;
+	float playerSpeed = 100;
+	bool xPositive = true;
+	bool yPositive = true;
 };
